@@ -165,6 +165,31 @@ h2 {
   overflow-y: auto;
 }
 
+.portfolio__img::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.125);
+}
+
+.portfolio__img::-webkit-scrollbar-thumb {
+  background-color: #545454;
+  border-radius: 9em;
+}
+
+.portfolio__img ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.125);
+}
+
+.portfolio__img::-moz-selection {
+  color: white;
+  background: rgba(0, 0, 0, 0.125);
+}
+
+.portfolio__img::selection {
+  color: white;
+  background: rgba(0, 0, 0, 0.125);
+}
+
 .portfolio__link {
   display: inline-block;
   width: 150px;
