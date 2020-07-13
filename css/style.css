@@ -152,6 +152,11 @@ h2 {
           box-sizing: border-box;
 }
 
+.portfolio__item:hover .project-preview {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
 .portfolio__info {
   width: 45%;
   margin-right: 5px;
@@ -218,6 +223,12 @@ h2 {
 .project-preview {
   width: 100%;
   height: auto;
+  -webkit-transition: -webkit-filter .3s ease-in-out;
+  transition: -webkit-filter .3s ease-in-out;
+  transition: filter .3s ease-in-out;
+  transition: filter .3s ease-in-out, -webkit-filter .3s ease-in-out;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .project-logo {
